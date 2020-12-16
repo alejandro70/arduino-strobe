@@ -1,5 +1,8 @@
+/* --------------------------------------------------------------------------------
+ * arduino-strobe
+ *  Secuencia aleatoria de 5 LEDs con efecto de flash.
+ --------------------------------------------------------------------------------*/
 #include <Arduino.h>
-//#include "LowPower.h"
 
 #define ledCount 5
 
@@ -11,7 +14,6 @@ unsigned long previousLight;
 int ledIndex = 0;
 int primeNumber[] = {53, 71, 97, 113, 149, 167, 191, 211, 233, 257};
 
-// the setup function runs once when you press reset or power the board
 void setup()
 {
   Serial.begin(9600);
@@ -21,7 +23,6 @@ void setup()
   }
 }
 
-// the loop function runs over and over again forever
 void loop()
 {
   int sensorValue = analogRead(A0);
