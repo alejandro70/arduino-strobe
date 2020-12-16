@@ -4,8 +4,7 @@
  --------------------------------------------------------------------------------*/
 #include <Arduino.h>
 
-#define ledCount 5
-
+int ledCount = 5;
 int ledPin[] = {3, 4, 5, 6, 7};
 int onTime = 50;
 unsigned long lapse[ledCount];
